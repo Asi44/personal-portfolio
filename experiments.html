@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Experiments</title>
-        <link rel="icon" href=".\assets\heart.png" />
+        <link rel="icon" href="./assets/heart.png" />
     </head>
 
     <body>
@@ -20,10 +20,12 @@
             </nav>
 
             <search>
-                <form>
-                  <input name="search_bar" id="search_bar" placeholder="search bar not functional yet">
+                <form action="index.html">
+                  <label for="search_bar">Search this page</label>
+                  <input type="search" id="search_bar" name="search_bar" />
+                  <button type="submit">Search</button>
                 </form>
-            </search>
+              </search>
         </header>
         
     
@@ -52,7 +54,7 @@
             <picture>
                 <source media="(min-width:950px)" srcset=".\assets\daisy-2226164_640.jpg">
                 <source media="(min-width:350px)" srcset=".\assets\achillea-millefolium-royalty-free-image-1726774012.jpg">
-                <img src = ".\assets\category_203_9863.jpg" alt = "image of a flower">
+                <img src = "./assets/category_203_9863.jpg" alt = "image of a flower">
             </picture>
 
             <div>
@@ -60,12 +62,12 @@
             </div>
 
             <audio controls loop>
-                <source src=".\assets\cat-89108.mp3" type="audio/mpeg">
+                <source src="./assets/cat-89108.mp3" type="audio/mpeg">
                 Your browser does not support mp3.
             </audio>
             
             <div>
-                <video source src=".\assets\5897817-uhd_3840_2160_25fps.mp4" type="video/mp4" height= "200" controls>
+                <video source src="./assets/5897817-uhd_3840_2160_25fps.mp4" type="video/mp4" height= "200" controls>
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -175,7 +177,7 @@
         <hr>
 
         <footer>
-            <p>This site was created by Aasiyah Shaikh. &copy 2025</p>
+            <p>This site was created by Aasiyah Shaikh. &copy; 2025</p>
         </footer>
 
     </body>
