@@ -23,8 +23,109 @@
 
         <main>
             
-        </main>
+            <pre>This is an             experimental                section to try out all the  unused tags</pre>
+            <p>p tag does not           preserve blank      spaces</p>
+
+            <picture>
+                <source media="(min-width:950px)" srcset=".\assets\daisy-2226164_640.jpg">
+                <source media="(min-width:350px)" srcset=".\assets\achillea-millefolium-royalty-free-image-1726774012.jpg">
+                <img src = ".\assets\category_203_9863.jpg" alt = "image of a flower">
+            </picture>
+
+            <div>
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" title="A link I found on the MDN docs"></iframe>
+            </div>
+
+            <audio controls loop>
+                <source src=".\assets\cat-89108.mp3" type="audio/mpeg">
+                Your browser does not support mp3.
+            </audio>
             
+            <div>
+                <video source src=".\assets\5897817-uhd_3840_2160_25fps.mp4" type="video/mp4" height= "200" controls>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+
+            <label for="fav_cuisine">Choose your favorite cuisine:</label>
+            <input list="cuisines" id="fav_cuisine" name="fav_cuisine" />
+            <datalist id="cuisines">
+                <option value="Mexican"></option>
+                <option value="Indian"></option>
+                <option value="Chinese"></option>
+                <option value="Italian"></option>
+                <option value="Korean"></option>
+                <option value="Turkish"></option>
+            </datalist>
+            
+            <table>
+                <caption>MENU</caption>
+                <colgroup>
+                    <col span="1" style="background-color: lightblue"  />
+                </colgroup>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>Cheese Pizza slice</td>
+                  <td>$3</td>
+                </tr>
+                <tr>
+                  <td>Pepperoni Pizza Slice</td>
+                  <td>$4</td>
+                </tr>
+                <tr>
+                  <td>Chicken Sandwich</td>
+                  <td>$5</td>
+                </tr>
+            </table>
+
+            <p>Item Descriptions:</p>
+
+            <dl>
+                <dt>Pepperoni Pizza</dt>
+                <dd>Pizza with pepperoni, provolone and cheddar cheese.</dd>
+
+                <dt>Chicken Sandwich</dt>
+                <dd>Sandwich with crispy fried chicken, mayo and lettuce.</dd>
+
+                <dt>Caesar Salad</dt>
+                <dd>salad made with lettuce, croutons, anchovies, egg, mustard</dd>
+            </dl>
+
+            <label for="menu-select">Choose your order:</label>
+            <select id="menu-select">
+            <optgroup label="Pizza">
+                <option>Pepperoni Pizza</option>
+                <option>Cheese Pizza</option>
+                <option>Veggie Pizza</option>
+            </optgroup>
+            <optgroup label="Sandwiches">
+                <option>Chicken sandwich</option>
+                <option>Veggie sandwich</option>
+            </optgroup>
+            <optgroup label="Daily Specials">
+                <option>Mac 'n Cheese</option>
+            </optgroup>
+            </select>
+
+            <p>Today's Daily Specials</p>
+            <del>
+                <p>Mac 'n Cheese</p>
+            </del>
+            <ins>
+                <p>Caesar Salad</p>
+            </ins>
+
+            The <abbr title="Macaroni and Cheese">Mac 'n Cheese</abbr> can be made gluten free.
+            Something that is <dfn>gluten free</dfn> does not contain wheat, barley or rye. 
+
+        </main>
+
+        <hr>
+
         <footer>
             <p>This site was created by Aasiyah Shaikh. &copy 2025</p>
         </footer>
