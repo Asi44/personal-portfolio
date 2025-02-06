@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Experiments</title>
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href=".\assets\heart.png" />
     </head>
 
     <body>
@@ -17,6 +18,12 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <search>
+                <form>
+                  <input name="search_bar" id="search_bar" placeholder="search bar not functional yet">
+                </form>
+            </search>
         </header>
         
     
@@ -25,6 +32,22 @@
             
             <pre>This is an             experimental                section to try out all the  unused tags</pre>
             <p>p tag does not           preserve blank      spaces</p>
+
+            <hello-world></hello-world>
+
+            <noscript>
+                <p>JavaScript is disabled on your browser. Please enable for the website to function properly</p>
+            </noscript>
+
+            <script>
+                class HelloWorld extends HTMLElement {
+                    connectedCallback() {
+                        console.log("Hello world!");
+                    }
+                }
+
+                customElements.define('hello-world', HelloWorld);
+            </script>
 
             <picture>
                 <source media="(min-width:950px)" srcset=".\assets\daisy-2226164_640.jpg">
@@ -113,14 +136,39 @@
 
             <p>Today's Daily Specials</p>
             <del>
-                <p>Mac 'n Cheese</p>
+                <p>Mac 'n Cheese </p>
             </del>
             <ins>
                 <p>Caesar Salad</p>
             </ins>
 
             The <abbr title="Macaroni and Cheese">Mac 'n Cheese</abbr> can be made gluten free.
-            Something that is <dfn>gluten free</dfn> does not contain wheat, barley or rye. 
+            Our <dfn>gluten free</dfn> items do not contain wheat, barley or rye, but cross contamination may occur. 
+
+            <section id="canvas_container">
+                <canvas id="myCanvas" style="border:1px solid black;">
+                
+                </canvas>
+    
+                <script>
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    
+                    ctx.beginPath();
+                    ctx.arc(50, 50, 50, 0, 2 * Math.PI);
+                    ctx.stroke();
+                </script>
+
+                
+                <svg width="40" height="40">
+                    <circle r="15" cx="20" cy="20" fill="yellow" />
+                </svg>
+            </section>
+            
+            <template>
+                <h2>template</h2>
+                <p>this is a template</p>
+            </template>
 
         </main>
 
